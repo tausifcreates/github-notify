@@ -1,0 +1,28 @@
+{
+	"name": "github-webhook-api",
+	"version": "0.0.1",
+	"description": "Listens for events from enoshy-bot github app installed on my account.",
+	"main": "index.js",
+	"author": "enoshy (LittleTasteOfHeaven)",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc -p .",
+		"build:watch": "tsc -w -p .",
+		"start": "tsc -p . && node build/index.js",
+		"dev": "nodemon index.ts"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.1",
+		"express": "^4.17.2",
+		"helmet": "^4.6.0",
+		"mongoose": "^6.1.2",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/morgan": "^1.9.3",
+		"@types/node": "^17.0.0",
+		"dotenv": "^10.0.0"
+	}
+}
